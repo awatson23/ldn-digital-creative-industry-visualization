@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <main class="landing-parent">
+    <section class="main-content">
+      <h2 class="hidden">Main Container</h2>
+      <section class="main-detail">
+        <!-- Title content -->
+        <h1><%= title %></h1>
+        <h2 class="hidden">Main Header</h2>
+        <div> 
+          <h3>London Digital</h3>
+          <span>Creative Industry</span>
+          <!-- background behind the project -->
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, delectus quibusdam unde distinctio soluta modi omnis reprehenderit repellat, atque doloremque consequatur nostrum molestias, nobis quod fuga obcaecati beatae mollitia cumque?</p>
+        </div>
+      </section>
+      <section class="map-content">
+        <h2 class="hidden">Map Render</h2>
+        <!-- Map code here -->
+      </section>
+    </section>
+  </main>
+</body>
+
 </html>
