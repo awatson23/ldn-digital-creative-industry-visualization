@@ -1,8 +1,94 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* /* a
+img, embed, object, video {
+max-width: 100%; }
+
+/* cleaning up  */
+*,
+*::before,
+*::after {
+box-sizing: inherit; }
+
+/*Fix for scaling of images IE*/
+img 
+{
+-ms-interpolation-mode: bicubic; 
 }
 
-a {
-  color: #00B7FF;
+/*hides from browser, shows in doc outliner */
+.hidden 
+{
+	display: none; 
+}
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* padding: 50px; */
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+p
+{
+  font-size: 0.75vw;
+  color: #011638;
+}
+
+.landing-parent
+{
+  width: 100%;
+  height: 100vh;
+}
+
+.main-content
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f3f0;
+}
+
+.map-content
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(207, 207, 207);
+} 
+
+/* main content for text in housed */
+.main-detail
+{
+  width: 35vw;
+  height: auto;
+  background-color:#f2f3f0;
+  padding: 30px;
+}
+
+.main-detail div 
+{
+  margin-top: 40px;
+}
+
+.main-detail div h3
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+}
+
+.main-detail div span
+{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.main-detail p  
+{
+  
+  font-size: 0.95vw;
+  line-height: 1.75vw;
+
 }
