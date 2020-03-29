@@ -92,3 +92,33 @@ p
   line-height: 1.75vw;
 
 }
+
+#form-type {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.form-button {
+  background-color: rgb(111, 195, 250);
+  padding: 5%;
+}
+
+.form-button:hover {
+  background-color: rgb(87, 170, 224);
+  cursor: pointer;
+}
+
+#individual-form-div {
+  visibility: visible;
+  position: absolute;
+  padding-top: 15px;
+}
+
+#organization-form-div {
+  visibility: hidden;
+  position: absolute;
+  padding-top: 15px;
+}

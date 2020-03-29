@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <main class="landing-parent">
+    <section class="main-content">
+      <h2 class="hidden">Main Container</h2>
+      <section class="main-detail">
+        <!-- Title content -->
+        <h1><%= title %></h1>
+        <h2 class="hidden">Main Header</h2>
+        <div> 
+          <h3>London Digital</h3>
+          <span>Creative Industry</span>
+          <!-- background behind the project -->
+          <p>Application form</p>
+          <div id="form-type">
+            <div class="form-button" id="individual-form-btn">Individual</div>
+            <div class="form-button" id="organization-form-btn">Organization</div>
+          </div>
+
+          <section id="individual-form-div">
+            <h2>Individuals</h2>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="previous-school">Previous school:</label><br>
+                <input type="text" id="school" name="school"><br>
+
+                <label for="grad-year">Graduation year:</label><br>
+                <input type="text" id="grad" name="grad"><br>
+
+                <label for="job-title">Job title:</label><br>
+                <input type="text" id="job-title" name="job-title"><br>
+
+                <label for="company">Company:</label><br>
+                <input type="text" id="company" name="company"><br>
+                <input type="submit" value="i-Submit">
+
+              </form> 
+          </section>
+
+          <section id="organization-form-div">
+              <h2>Organizations</h2>
+              <form>
+                <label for="cname">Company name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="csummary">Company summary:</label><br>
+                <input type="text" id="csummary" name="csummary"><br>
+
+                <label for="est-date">Establishment date:</label><br>
+                <input type="text" id="est-date" name="est-date"><br>
+
+                <label for="ind-sector">Industry Sector:</label><br>
+                <input type="text" id="ind-sector" name="ind-sector"><br>
+
+                <label for="c-tech">Technologies used:</label><br>
+                <input type="checkbox" name="wordpress" value="PHP">
+                <label for="option1"> PHP</label><br>
+                <input type="checkbox" name="wordpress" value="Drupal">
+                <label for="option2"> Drupal</label><br>
+                <input type="checkbox" name="wordpress" value="Wordpress" checked>
+                <label for="option3"> Wordpress</label><br><br>
+                <input type="submit" value="o-Submit">
+
+              </form> 
+          </section>
+
+
+        </div>
+      </section>
+      <section class="map-content">
+        <h2 class="hidden">Map Render</h2>
+        <!-- Map code here -->
+      </section>
+    </section>
+  </main>
+
+  <script>
+    var individualBtn = document.getElementById("individual-form-btn"),
+        organizationBtn = document.getElementById("organization-form-btn");
+
+        showIndvForm = document.getElementById("individual-form-div");
+        showOrgForm = document.getElementById("organization-form-div");
+
+    individualBtn.addEventListener("click", function(){
+        showIndvForm.style.visibility = 'visible';
+        showOrgForm.style.visibility = 'hidden';
+    }, false);
+
+    organizationBtn.addEventListener("click", function(){
+        showIndvForm.style.visibility = 'hidden';
+        showOrgForm.style.visibility = 'visible';
+    }, false);
+  </script>
+</body>
+
+</html>
