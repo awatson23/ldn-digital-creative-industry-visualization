@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'LDN' });
 });
 
+router.get('/form', function(req, res, next) {
+  res.render('form', { title: 'LDN' });
+});
+
 module.exports = router;
