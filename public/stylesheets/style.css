@@ -14,6 +14,9 @@ img
 -ms-interpolation-mode: bicubic; 
 }
 
+a {
+  text-decoration: none;
+}
 /*hides from browser, shows in doc outliner */
 .hidden 
 {
@@ -40,18 +43,27 @@ p
 {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .main-content
 {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 30%;
   height: 100vh;
   background-color: #f2f3f0;
 }
 
 .map-content
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(207, 207, 207);
+} 
+
+.network-content
 {
   width: 100%;
   height: 100vh;
@@ -87,23 +99,24 @@ p
 
 .main-detail p  
 {
-  
   font-size: 0.95vw;
   line-height: 1.75vw;
-
 }
 
 #form-type {
-  margin-top: -20px;
+  margin: 0 auto;
+  margin-top: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
 }
 
 .form-button {
-  background-color: rgb(111, 195, 250);
+  text-align: center;
+  background-color: rgb(188, 228, 255);
   padding: 5%;
+  width: 50%;
 }
 
 .form-button:hover {
@@ -111,14 +124,30 @@ p
   cursor: pointer;
 }
 
+.nav-button {
+  text-align: center;
+  background-color: rgb(111, 195, 250);
+  padding: 5%;
+}
+
+.nav-button:hover {
+  background-color: rgb(14, 124, 187);
+  cursor: pointer;
+}
+
+
 #individual-form-div {
-  visibility: visible;
   position: absolute;
+  visibility: visible;
   padding-top: 15px;
 }
 
+#individual-form-btn {
+  background-color: rgb(14, 124, 187);
+}
+
 #organization-form-div {
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
   padding-top: 15px;
 }
