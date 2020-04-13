@@ -3,152 +3,157 @@ img, embed, object, video {
 max-width: 100%; }
 
 /* cleaning up  */
-*,
-*::before,
-*::after {
-box-sizing: inherit; }
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
 
 /*Fix for scaling of images IE*/
-img 
-{
--ms-interpolation-mode: bicubic; 
+
+img {
+	-ms-interpolation-mode: bicubic;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 /*hides from browser, shows in doc outliner */
-.hidden 
-{
-	display: none; 
+
+.hidden {
+	display: none;
 }
-*
-{
-  margin: 0px;
-  padding: 0px;
+
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
-  /* padding: 50px; */
- font-family: Arial, Helvetica, sans-serif;
+	/* padding: 50px; */
+	font-family: 'Playfair Display', serif;
 }
 
-p
-{
-  font-size: 0.75vw;
-  color: #011638;
+p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.75vw;
+	color: #011638;
 }
 
-.landing-parent
-{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
+.landing-parent {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
 }
 
-.main-content
-{
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-  height: 100vh;
-  background-color: #f2f3f0;
+.main-content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	height: 100vh;
 }
 
-.map-content
-{
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(207, 207, 207);
-} 
+.map-content {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(207, 207, 207);
+}
 
-.network-content
-{
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(207, 207, 207);
-} 
+.network-content {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(207, 207, 207);
+}
 
 /* main content for text in housed */
-.main-detail
-{
-  width: 35vw;
-  height: auto;
-  background-color:#f2f3f0;
-  padding: 30px;
-  
+
+.main-detail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 19vw;
+	height: 100vh;
+	background-color: #f2f3f0;
+	padding: 0px 30px 0px 30px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* image dimensions */
+.logo img{
+	width: 612px;
+	height: 139px;
 }
 
-.main-detail div 
-{
-  margin-top: 40px;
+.main-detail span {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.85vw;
 }
 
-.main-detail div h3
-{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2vw;
+.main-detail div {
+	margin-top: 50px;
 }
 
-.main-detail div span
-{
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 15px;
+.main-detail div h3 {
+	font-weight: 600;
+	font-size: 2vw;
 }
 
-.main-detail p  
-{
-  font-size: 0.95vw;
-  line-height: 1.75vw;
+.main-detail div span {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.main-detail p {
+	font-size: 0.95vw;
+	line-height: 1.75vw;
 }
 
 #form-type {
-  margin: 0 auto;
-  margin-top: 50vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+	margin: 0 auto;
+	margin-top: 50vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .form-button {
-  text-align: center;
-  background-color: rgb(188, 228, 255);
-  padding: 5%;
-  width: 50%;
+	text-align: center;
+	background-color: rgb(188, 228, 255);
+	padding: 5%;
+	width: 50%;
 }
 
 .form-button:hover {
-  background-color: rgb(87, 170, 224);
-  cursor: pointer;
+	background-color: rgb(87, 170, 224);
+	cursor: pointer;
 }
 
 .nav-button {
-  text-align: center;
-  background-color: rgb(111, 195, 250);
-  padding: 5%;
+	text-align: center;
+	background-color: rgb(111, 195, 250);
+	padding: 5%;
 }
 
 .nav-button:hover {
-  background-color: rgb(14, 124, 187);
-  cursor: pointer;
+	background-color: rgb(14, 124, 187);
+	cursor: pointer;
 }
 
-
 #individual-form-div {
-  position: absolute;
-  visibility: visible;
-  padding-top: 15px;
+	position: absolute;
+	visibility: visible;
+	padding-top: 15px;
 }
 
 #individual-form-btn {
-  background-color: rgb(14, 124, 187);
+	background-color: rgb(14, 124, 187);
 }
 
 #organization-form-div {
-  position: absolute;
-  visibility: hidden;
-  padding-top: 15px;
+	position: absolute;
+	visibility: hidden;
+	padding-top: 15px;
 }
