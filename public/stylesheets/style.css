@@ -36,6 +36,7 @@ body {
 
 p {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
 	font-size: 0.75vw;
 	color: #011638;
 }
@@ -48,11 +49,13 @@ p {
 }
 
 .main-content {
-	position: relative;
+	/* width: 45vw;
+	height: 100%; */
 	display: flex;
-	flex-direction: row;
-	width: 30%;
-	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f3f0;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .map-content {
@@ -70,19 +73,23 @@ p {
 /* main content for text in housed */
 
 .main-detail {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 19vw;
+	width: 20vw;
 	height: 100vh;
-	background-color: #f2f3f0;
 	padding: 0px 30px 0px 30px;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+.main-detail h2 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.75vw;
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* image dimensions */
-.logo img{
-	width: 612px;
-	height: 139px;
+
+.logo img {
+	width: 100%;
+	height: 100%;
 }
 
 .main-detail span {
@@ -110,9 +117,14 @@ p {
 	line-height: 1.75vw;
 }
 
+.introduction-paragraph {
+	margin-top: 30px;
+}
+
 #form-type {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0 auto;
-	margin-top: 50vh;
+	margin-top: 64vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -120,6 +132,7 @@ p {
 }
 
 .form-button {
+	font-size: 0.95vw;
 	text-align: center;
 	background-color: rgb(188, 228, 255);
 	padding: 5%;
@@ -143,17 +156,58 @@ p {
 }
 
 #individual-form-div {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1vw;
+	letter-spacing: 1px;
 	position: absolute;
+	width: 64%;
+	height: auto;
 	visibility: visible;
-	padding-top: 15px;
+	margin-top: 33px;
+}
+
+#individual-form-div input {
+	width: 18vw;
+	margin-bottom: 18px;
+	padding: 6px;
 }
 
 #individual-form-btn {
+	font-size: 0.95vw;
 	background-color: rgb(14, 124, 187);
 }
 
 #organization-form-div {
 	position: absolute;
 	visibility: hidden;
-	padding-top: 15px;
+	margin-top: 15px;
+}
+
+#submit-button {
+	text-transform: uppercase;
+	font-size: 1vw;
+	height: 38px;
+	text-align: center;
+	border-style: none;
+	background-color: #47ce59;
+}
+
+label {
+	margin-bottom: -12px;
+	display: block;
+}
+
+.indicator-dots {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-evenly;
+}
+
+.indicator-dots div {
+	margin-left: 30px;
+	width: 10px;
+	height: 10px;
+	border-radius: 60px;
+	background-color: rgb(92, 92, 92);
 }
