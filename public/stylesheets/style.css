@@ -49,11 +49,13 @@ p {
 }
 
 .main-content {
-	position: relative;
+	/* width: 45vw;
+	height: 100%; */
 	display: flex;
-	flex-direction: row;
-	width: 30%;
-	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f3f0;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .map-content {
@@ -71,17 +73,21 @@ p {
 /* main content for text in housed */
 
 .main-detail {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 20vw;
 	height: 100vh;
-	background-color: #f2f3f0;
 	padding: 0px 30px 0px 30px;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+.main-detail h2 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.75vw;
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* image dimensions */
-.logo img{
+
+.logo img {
 	width: 100%;
 	height: 100%;
 }
@@ -113,7 +119,6 @@ p {
 
 .introduction-paragraph {
 	margin-top: 30px;
-
 }
 
 #form-type {
@@ -175,17 +180,34 @@ p {
 #organization-form-div {
 	position: absolute;
 	visibility: hidden;
-	padding-top: 15px;
+	margin-top: 15px;
 }
 
-#submit-button{
+#submit-button {
+	text-transform: uppercase;
+	font-size: 1vw;
+	height: 38px;
 	text-align: center;
 	border-style: none;
-	background-color:#47ce59;
+	background-color: #47ce59;
 }
 
-label{
+label {
 	margin-bottom: -12px;
-    display: block;
+	display: block;
+}
 
+.indicator-dots {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-evenly;
+}
+
+.indicator-dots div {
+	margin-left: 30px;
+	width: 10px;
+	height: 10px;
+	border-radius: 60px;
+	background-color: rgb(92, 92, 92);
 }
