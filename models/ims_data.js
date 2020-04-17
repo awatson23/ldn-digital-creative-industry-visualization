@@ -21,6 +21,6 @@ var dataSchema = new mongoose.Schema({
     status:String,
     curr_country:String
 },
-{collection:'imsdata'});
+{collection:'ims_data'});
 
-module.exports = mongoose.model('ims_data', dataSchema);
+module.exports = mongoose.model('imsdata', dataSchema);
