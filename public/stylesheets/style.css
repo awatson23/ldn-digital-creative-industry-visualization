@@ -98,7 +98,7 @@ p {
 }
 
 .main-detail div {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .main-detail div h3 {
@@ -164,7 +164,7 @@ p {
 	height: 60vh;
 	visibility: visible;
 	margin-top: 33px;
-	overflow-y :scroll;
+	overflow-y: scroll;
 }
 
 #individual-form-div input {
@@ -187,7 +187,7 @@ p {
 	height: 60vh;
 	visibility: hidden;
 	margin-top: 33px;
-	overflow-y :scroll;
+	overflow-y: scroll;
 }
 
 #organization-form-div input {
@@ -205,9 +205,7 @@ p {
 	background-color: #47ce59;
 }
 
-.checkbox {
-	
-}
+.checkbox {}
 
 label {
 	margin-bottom: -12px;
@@ -227,4 +225,18 @@ label {
 	height: 10px;
 	border-radius: 60px;
 	background-color: rgb(92, 92, 92);
+}
+
+.back-button {
+	cursor: pointer;
+	padding: 0px 0px 8px;
+	border-style: none;
+	transition: all 500ms ease 0s;
+	-webkit-transition: all 500ms ease 0s;
+	-moz-transition: all 500ms ease 0s;
+	-o-transition: all 500ms ease 0s;
+}
+
+.back-button p:hover {
+	color: rgb(14, 124, 187);
 }
