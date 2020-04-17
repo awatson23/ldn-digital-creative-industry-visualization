@@ -165,6 +165,7 @@ p {
 	visibility: visible;
 	margin-top: 33px;
 	overflow-y :scroll;
+	overflow-x: hidden;
 }
 
 #individual-form-div input {
@@ -188,6 +189,7 @@ p {
 	visibility: hidden;
 	margin-top: 33px;
 	overflow-y :scroll;
+	overflow-x: hidden;
 }
 
 #organization-form-div input {
@@ -205,8 +207,17 @@ p {
 	background-color: #47ce59;
 }
 
-.checkbox {
-	
+#checklists{
+	display: grid;
+	grid-template-columns: 50px 15px;	
+	padding-bottom: 10%;
+}
+
+.techTitle {
+	width: 95%;
+	border-bottom: 1px solid black;
+	padding-bottom: 2%;
+	margin-top: 5%;
 }
 
 label {
