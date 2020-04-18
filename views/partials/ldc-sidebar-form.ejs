@@ -1,3 +1,5 @@
+<%include navBar.ejs%> 
+
 <section class="main-content">
     <h2 class="hidden">Main Container</h2>
     <section class="main-detail">
@@ -27,20 +29,20 @@
                 <label for="previous-school">Previous school:</label><br>
                 <input type="text" id="school" name="school"><br>
 
-                <label for="grad-year">Graduation year:</label><br>
-                <input type="text" id="grad" name="grad"><br>
+                <label for="grad-year">Date of graduation:</label><br>
+                <input type="month" id="grad" name="grad"><br>
 
                 <label for="job-title">Job title:</label><br>
                 <input type="text" id="job-title" name="job-title"><br>
 
-                <label for="company">Company:</label><br>
+                <label for="company">Place of employment:</label><br>
                 <input type="text" id="company" name="company"><br>
-                
+
                 <label class="techTitle">Frameworks:</label>
                 <div id="checklists">
 
                 <label for="framework1">Magento</label>
-                <input class="checkbox" type="checkbox" name="php" value="PHP">
+                <input class="checkbox" type="checkbox" name="magento" value="magento">
 
                 <label for="framework2">Drupal</label>
                 <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
@@ -48,6 +50,11 @@
                 <label for="framework3">Wordpress</label>
                 <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
 
+                <label for="framework4">Ruby</label>
+                <input class="checkbox" type="checkbox" name="ruby" value="ruby" checked>
+
+                <label for="framework5">Laravel</label>
+                <input class="checkbox" type="checkbox" name="laravel" value="laravel" checked>
                 
                 </div>
 
@@ -55,16 +62,22 @@
                 <div id="checklists">
 
                 <label for="fontend1">Javascript</label>
-                <input class="checkbox" type="checkbox" name="php" value="PHP">
+                <input class="checkbox" type="checkbox" name="javascrip" value="javascript">
 
                 <label for="frontend2">HTML</label>
-                <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
+                <input class="checkbox" type="checkbox" name="html" value="html">
 
                 <label for="frontend3">CSS</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <input class="checkbox" type="checkbox" name="css" value="css" checked>
 
                 <label for="frontend3">Angular.js</label>
                 <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+
+                <label for="frontend4">Bootstrap</label>
+                <input class="checkbox" type="checkbox" name="bootstrap" value="bootstrap" checked>
+
+                <label for="frontend4">Greensock</label>
+                <input class="checkbox" type="checkbox" name="greensock" value="greensock" checked>
 
                 </div>
 
@@ -74,14 +87,23 @@
                 <label for="backend1">PHP</label>
                 <input class="checkbox" type="checkbox" name="php" value="PHP">
 
-                <label for="backend2">Python</label>
-                <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
+                <label for="backend2">MongoDB</label>
+                <input class="checkbox" type="checkbox" name="mongodb" value="mongodb">
 
-                <label for="backend3">Java</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <label for="backend3">mySQL</label>
+                <input class="checkbox" type="checkbox" name="mysql" value="mysql">
 
-                <label for="backend3">Node.js</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <label for="backend4">Redis</label>
+                <input class="checkbox" type="checkbox" name="redis" value="redis">
+
+                <label for="backend5">Python</label>
+                <input class="checkbox" type="checkbox" name="python" value="python">
+
+                <label for="backend6">Java</label>
+                <input class="checkbox" type="checkbox" name="java" value="java" checked>
+
+                <label for="backend7">Node.js</label>
+                <input class="checkbox" type="checkbox" name="java" value="node.js" checked>
 
                 </div>
 
@@ -96,11 +118,14 @@
                 <label for="cname">Company name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
 
+                <label for="cname">Company address:</label><br>
+                <input type="text" id="address" name="adress"><br>
+
                 <label for="csummary">Company summary:</label><br>
                 <input type="text" id="csummary" name="csummary"><br>
 
                 <label for="est-date">Establishment date:</label><br>
-                <input type="text" id="est-date" name="est-date"><br>
+                <input type="month" id="est-date" name="est-date"><br>
 
                 <label for="ind-sector">Industry Sector:</label><br>
                 <input type="text" id="ind-sector" name="ind-sector"><br>
@@ -111,7 +136,7 @@
                 <div id="checklists">
 
                 <label for="framework1">Magento</label>
-                <input class="checkbox" type="checkbox" name="php" value="PHP">
+                <input class="checkbox" type="checkbox" name="magento" value="magento">
 
                 <label for="framework2">Drupal</label>
                 <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
@@ -119,6 +144,11 @@
                 <label for="framework3">Wordpress</label>
                 <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
 
+                <label for="framework4">Ruby</label>
+                <input class="checkbox" type="checkbox" name="ruby" value="ruby" checked>
+
+                <label for="framework5">Laravel</label>
+                <input class="checkbox" type="checkbox" name="laravel" value="laravel" checked>
                 
                 </div>
 
@@ -126,16 +156,22 @@
                 <div id="checklists">
 
                 <label for="fontend1">Javascript</label>
-                <input class="checkbox" type="checkbox" name="php" value="PHP">
+                <input class="checkbox" type="checkbox" name="javascrip" value="javascript">
 
                 <label for="frontend2">HTML</label>
-                <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
+                <input class="checkbox" type="checkbox" name="html" value="html">
 
                 <label for="frontend3">CSS</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <input class="checkbox" type="checkbox" name="css" value="css" checked>
 
                 <label for="frontend3">Angular.js</label>
                 <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+
+                <label for="frontend4">Bootstrap</label>
+                <input class="checkbox" type="checkbox" name="bootstrap" value="bootstrap" checked>
+
+                <label for="frontend4">Greensock</label>
+                <input class="checkbox" type="checkbox" name="greensock" value="greensock" checked>
 
                 </div>
 
@@ -145,14 +181,23 @@
                 <label for="backend1">PHP</label>
                 <input class="checkbox" type="checkbox" name="php" value="PHP">
 
-                <label for="backend2">Python</label>
-                <input class="checkbox" type="checkbox" name="drupal" value="Drupal">
+                <label for="backend2">MongoDB</label>
+                <input class="checkbox" type="checkbox" name="mongodb" value="mongodb">
 
-                <label for="backend3">Java</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <label for="backend3">mySQL</label>
+                <input class="checkbox" type="checkbox" name="mysql" value="mysql">
 
-                <label for="backend3">Node.js</label>
-                <input class="checkbox" type="checkbox" name="wordpress" value="Wordpress" checked>
+                <label for="backend4">Redis</label>
+                <input class="checkbox" type="checkbox" name="redis" value="redis">
+
+                <label for="backend5">Python</label>
+                <input class="checkbox" type="checkbox" name="python" value="python">
+
+                <label for="backend6">Java</label>
+                <input class="checkbox" type="checkbox" name="java" value="java" checked>
+
+                <label for="backend7">Node.js</label>
+                <input class="checkbox" type="checkbox" name="java" value="node.js" checked>
 
                 </div>
                 <input id="submit-button" type="submit" value="Submit">
