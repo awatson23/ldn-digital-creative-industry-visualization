@@ -65,8 +65,29 @@ p {
 }
 
 .main-content {
-	/* width: 45vw;
-	height: 100%; */
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f3f0;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.home-content {
+	width: 30vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f3f0;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
+.turbine-content {
+	width: 25vw;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,37 +108,39 @@ p {
 }
 
 .projects-content {
-	width: 100%;
-	height: 100vh;
+	position: absolute;
+	right: 0%;
+	width: 60vw;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 30vw 30vw;
 	grid-template-rows: 1fr 1fr;
+	justify-content: space-evenly;;
 }
 
 .projectDiv {
-	width: 500px;
-	height: 700px;
-	margin: 0 auto;
+	width: 20vw;
+	height: 30vw;
 	display: flex;
 	flex-direction: column;
 	margin-top: 15%;
+	margin-bottom: 10%;
 }
 
 .project-img {
 	width: 100%;
-	height: 500px;
+	height: 20vw;
 	background-color: gray;
 }
 
 .projectDiv h3 {
 	text-align: center;
-	font-size: 35px;
+	font-size: 2vw;
 	padding: 5%;
 }
 
 .projectDiv p {
 	text-align: left;
-	font-size: 20px;
+	font-size: 1.2vw;
 }
 
 /* main content for text in housed */
@@ -126,6 +149,17 @@ p {
 	width: 20vw;
 	height: 100vh;
 	padding: 0px 30px 0px 30px;
+}
+
+#makeFixed {
+	position: fixed;
+}
+
+#makeFixedRow {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	width: 32vw;
 }
 
 .main-detail h2 {
@@ -345,7 +379,7 @@ label {
 
 .icons-library{
 	margin-top: 120px;
-
+	
 }
 /* icons positiioning  */
 .icons-library div {

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,46 +17,50 @@
 
   <main class="landing-parent">
 
+<div id="makeFixedRow">
 
-    <section class="home-content" id="makeFixed">
-      <h2 class="hidden">Main Container</h2>
-      <h2 class="hidden">Main Container</h2>
-      <section class="main-detail">
+    <%include partials/navBar.ejs%>
+
+    <!-- quick fix to make the navBar smaller-->
+    
+
+    <section class="main-content">
+    <h2 class="hidden">Main Container</h2>
+    <h2 class="hidden">Main Container</h2>
+    <section class="main-detail">
         <!-- Title content -->
         <div>
-          <!-- <h1><%= title %></h1> -->
-          <div class="logo">
-            <img src="images/data-viz-fanshawe-logo.svg" alt="Fanshawe College Logo">
+            <!-- <h1><%= title %></h1> -->
+            <br><br>
+            <h2 class="hidden">Main Header</h2>
+            <!-- headings -->
+            <div>
+                <!-- <h2>Interactive Media Development 3D Visualization</h2> -->
+                <h3>Virus Touchscreen Infographics</h3>
+                <!-- background behind the project -->
+                <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
+                    delectus quibusdam unde distinctio soluta modi omnis reprehenderit repellat, atque doloremque
+                    consequatur nostrum molestias, nobis quod fuga obcaecati beatae mollitia cumque?</p>
 
-          </div>
-          <h2 class="hidden">Main Header</h2>
-          <!-- headings -->
-          <div>
-            <!-- <h2>Interactive Media Development 3D Visualization</h2> -->
-            <h3>Digital Creative Showcase</h3>
-            <!-- background behind the project -->
-            <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, delectus
-              quibusdam unde distinctio soluta modi omnis reprehenderit repellat, atque doloremque consequatur nostrum
-              molestias, nobis quod fuga obcaecati beatae mollitia cumque?</p>
+                <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
+                    delectus quibusdam unde distinctio</p>
 
-            <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, delectus
-              quibusdam unde distinctio</p>
-
-          </div>
+            </div>
         </div>
-      </section>
     </section>
+</section>
+</div>
 
     <section class="projects-content">
       <h2 class="hidden">Projects</h2>
 
       <div class="projectDiv">
-        <a href="/ldc-viz-map">
+        <a href="/wind-turbines">
           <div class="project-img">
           </div>
         </a>
 
-        <h3>London's Digital Creative Industry</h3>
+        <h3>Aaron</h3>
         <p>sit amet. Lorem ipsum dolor sit amet,
           consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut dolor sit amet.</p>
@@ -63,12 +68,12 @@
 
       <div class="projectDiv">
 
-        <a href="/covid-19-project">
+        <a href="/wind-turbines">
           <div class="project-img">
           </div>
         </a>
 
-        <h3>COVID-19</h3>
+        <h3>Cadence</h3>
         <p>sit amet. Lorem ipsum dolor sit amet,
           consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut dolor sit amet.</p>
@@ -81,7 +86,7 @@
           </div>
         </a>
 
-        <h3>Wind Turbines</h3>
+        <h3>Cindy</h3>
         <p>sit amet. Lorem ipsum dolor sit amet,
           consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut dolor sit amet.</p>
@@ -89,12 +94,25 @@
 
       <div class="projectDiv">
 
-        <a href="/virus-touchscreens">
+        <a href="/wind-turbines">
           <div class="project-img">
           </div>
         </a>
 
-        <h3>Virus Touchscreen</h3>
+        <h3>Heni</h3>
+        <p>sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut dolor sit amet.</p>
+      </div>
+
+      <div class="projectDiv">
+
+        <a href="/wind-turbines">
+          <div class="project-img">
+          </div>
+        </a>
+
+        <h3>Jin</h3>
         <p>sit amet. Lorem ipsum dolor sit amet,
           consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut dolor sit amet.</p>

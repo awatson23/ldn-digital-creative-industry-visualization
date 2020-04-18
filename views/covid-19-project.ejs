@@ -1,34 +1,42 @@
-<section class="navigation">
-    <div class="fanshawe-logo">
-        <a href="/"><img src="images/fanshawe-logo-icon.png" alt="fanshawe-icon"></a>
-    </div>
-    <!-- icon library -->
-    <section class="icons-library">
-        <div>
-            <img src="images/icon-home.svg" alt="home icon">
-        </div>
-        <div>
-            <img src="images/icon-creative.svg" alt="creative indsutry icon">
-        </div>
-        <div>
-            <img src="images/icon-covid.svg" alt="covid-19 icon">
-        </div>
-    </section>
-<!-- opening intro -->
-</section>
-<section class="main-content">
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main class="landing-parent">
+
+<div id="makeFixedRow">
+
+    <%include partials/navBar.ejs%>
+
+    <!-- quick fix to make the navBar smaller-->
+    
+
+    <section class="main-content">
     <h2 class="hidden">Main Container</h2>
     <h2 class="hidden">Main Container</h2>
     <section class="main-detail">
         <!-- Title content -->
         <div>
             <!-- <h1><%= title %></h1> -->
-
+            <br><br>
             <h2 class="hidden">Main Header</h2>
             <!-- headings -->
             <div>
                 <!-- <h2>Interactive Media Development 3D Visualization</h2> -->
-                <h3>London Digital Creative</h3>
+                <h3>Observing COVID-19 cases</h3>
                 <!-- background behind the project -->
                 <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
                     delectus quibusdam unde distinctio soluta modi omnis reprehenderit repellat, atque doloremque
@@ -37,13 +45,23 @@
                 <p class="introduction-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
                     delectus quibusdam unde distinctio</p>
 
-
-                <a href="/ldc-viz-network">
-                    <div class="nav-button">
-                        <p>Explore the data</p>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
 </section>
+</div>
+
+    <section class="projects-content">
+      <h2 class="hidden">Projects</h2>
+
+      <div class="projectDiv">
+       
+        </div>
+      <!-- Map code here -->
+    </section>
+
+  </main>
+
+</body>
+
+</html>
