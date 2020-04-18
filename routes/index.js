@@ -7,8 +7,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'LDN Map' });
 });
 
-router.get('/network', function(req, res, next) {
-  // res.render('network', { title: 'LDN Network' });
+router.get('/ldc-viz-map', function(req, res, next) {
+  res.render('ldc-viz-map', { title: 'LDN Digital' });
+});
+
+router.get('/ldc-viz-network', function(req, res, next) {
+  res.render('ldc-viz-network', { title: 'LDN Network' });
 });
 
 router.get('/map', function(req, res, next) {

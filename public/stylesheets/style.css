@@ -97,6 +97,41 @@ p {
 }
 
 
+.projects-content {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.projectDiv {
+	width: 500px;
+	height: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15%;
+}
+
+.project-img {
+	width: 100%;
+	height: 500px;
+	background-color: gray;
+}
+
+.projectDiv h3 {
+	text-align: center;
+	font-size: 35px;
+	padding: 5%;
+}
+
+.projectDiv p {
+	text-align: left;
+	font-size: 20px;
+}
+
+
 /* main content for text in housed */
 
 .main-detail {
@@ -252,11 +287,14 @@ p {
     background-color: #47ce59;
 }
 
-#checklists {
-    display: grid;
-    grid-template-columns: 50px 15px;
-    padding-bottom: 10%;
-}
+
+
+#checklists{
+	display: grid;
+	grid-template-columns: 30% 10%;	
+	padding-bottom: 10%;
+
+
 
 .techTitle {
     width: 95%;
