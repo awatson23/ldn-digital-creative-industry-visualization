@@ -27,6 +27,16 @@ router.get('/covid-19-project', function(req, res, next) {
   res.render('covid-19-project', { title: 'Observing COVID-19 cases' });
 });
 
+//cadence's project routes
+router.get('/cadence-virus/index.html', function(req, res, next) {
+  res.sendFile(__dirname + 'public/cadence-virus/index.html');
+});
+
+router.get('/cadence-virus/index.html', function(req, res, next) {
+  res.sendFile(__dirname + 'public/cadence-turbine/index.html');
+});
+
+
 router.get('/map', function(req, res, next) {
 
 var q = imsdata.find();
