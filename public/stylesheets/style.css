@@ -210,8 +210,7 @@ p {
 
 #checklists{
 	display: grid;
-	grid-template-columns: 50px 15px;	
-	padding-bottom: 10%;
+	grid-template-columns: 30% 10%;padding-bottom: 10%;
 }
 
 .techTitle {
