@@ -4,253 +4,334 @@ max-width: 100%; }
 
 /* cleaning up  */
 
-*, *::before, *::after {
-	box-sizing: inherit;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
+
 
 /*Fix for scaling of images IE*/
 
 img {
-	-ms-interpolation-mode: bicubic;
+    -ms-interpolation-mode: bicubic;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 
 /*hides from browser, shows in doc outliner */
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
+
+/* FontFace  body*/
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqregular';
+    src: url('akzidenzgrotesk-regular-webfont.woff2') format('woff2'), url('akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('akzidenzgrotesk-bold-webfont.woff2') format('woff2'), url('akzidenzgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* END fontface */
+
 body {
-	/* padding: 50px; */
-	font-family: 'Playfair Display', serif;
+    /* padding: 50px; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Libre Baskerville', serif;
+    /* titles Font*/
 }
 
 p {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	letter-spacing: 1px;
-	font-size: 0.75vw;
-	color: #011638;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.75vw;
+    color: #011638;
 }
 
 .landing-parent {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-content {
-	/* width: 45vw;
+    /* width: 45vw;
 	height: 100%; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2f3f0;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f3f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .map-content {
-	width: 100%;
-	height: 100vh;
-	background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(207, 207, 207);
 }
 
 .network-content {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(207, 207, 207);
+}
+
+
+.projects-content {
 	width: 100%;
 	height: 100vh;
-	background-color: rgb(207, 207, 207);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
+
+.projectDiv {
+	width: 500px;
+	height: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15%;
+}
+
+.project-img {
+	width: 100%;
+	height: 500px;
+	background-color: gray;
+}
+
+.projectDiv h3 {
+	text-align: center;
+	font-size: 35px;
+	padding: 5%;
+}
+
+.projectDiv p {
+	text-align: left;
+	font-size: 20px;
+}
+
 
 /* main content for text in housed */
 
 .main-detail {
-	width: 20vw;
-	height: 100vh;
-	padding: 0px 30px 0px 30px;
+    width: 20vw;
+    height: 100vh;
+    padding: 0px 30px 0px 30px;
 }
 
 .main-detail h2 {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 0.75vw;
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75vw;
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 /* image dimensions */
 
 .logo img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .main-detail span {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 0.85vw;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85vw;
 }
 
 .main-detail div {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .main-detail div h3 {
-	font-weight: 600;
-	font-size: 2vw;
+    font-weight: 50;
+    font-size: 3vw;
+    font-style: italic;
+    color: #011638;
+    line-height: 2.7vw;
 }
 
 .main-detail div span {
-	display: block;
-	margin-top: 5px;
-	margin-bottom: 15px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .main-detail p {
-	font-size: 0.95vw;
-	line-height: 1.75vw;
+    font-size: 0.95vw;
+    line-height: 1.75vw;
 }
 
 .introduction-paragraph {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 #form-type {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0 auto;
-	margin-top: 64vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    margin-top: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .form-button {
-	font-size: 0.95vw;
-	text-align: center;
-	background-color: rgb(188, 228, 255);
-	padding: 5%;
-	width: 50%;
+    font-size: 0.95vw;
+    text-align: center;
+    background-color: rgb(188, 228, 255);
+    padding: 5%;
+    width: 50%;
 }
 
 .form-button:hover {
-	background-color: rgb(87, 170, 224);
-	cursor: pointer;
+    background-color: rgb(87, 170, 224);
+    cursor: pointer;
 }
 
 .nav-button {
-	text-align: center;
-	background-color: rgb(111, 195, 250);
-	padding: 5%;
+    text-align: center;
+    background-color: #006E90;
+    padding: 5%;
 }
 
 .nav-button:hover {
-	background-color: rgb(14, 124, 187);
-	cursor: pointer;
+    background-color: #C0C9CC;
+    cursor: pointer;
+}
+
+.nav-button p {
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #EEC643;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+.nav-button:hover p {
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #006E90;
+    font-weight: bolder;
+    font-size: 1.2vw;
 }
 
 #individual-form-div {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1vw;
-	letter-spacing: 1px;
-	position: absolute;
-	width: 21vw;
-	height: 60vh;
-	visibility: visible;
-	margin-top: 33px;
-	overflow-y :scroll;
-	overflow-x: hidden;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 21vw;
+    height: 60vh;
+    visibility: visible;
+    margin-top: 33px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #individual-form-div input {
-	width: 18vw;
-	margin-bottom: 18px;
-	padding: 6px;
+    width: 18vw;
+    margin-bottom: 18px;
+    padding: 6px;
 }
 
 #individual-form-btn {
-	font-size: 0.95vw;
-	background-color: rgb(14, 124, 187);
+    font-size: 0.95vw;
+    background-color: rgb(14, 124, 187);
 }
 
 #organization-form-div {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1vw;
-	letter-spacing: 1px;
-	position: absolute;
-	width: 21vw;
-	height: 60vh;
-	visibility: hidden;
-	margin-top: 33px;
-	overflow-y :scroll;
-	overflow-x: hidden;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 21vw;
+    height: 60vh;
+    visibility: hidden;
+    margin-top: 33px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #organization-form-div input {
-	width: 18vw;
-	margin-bottom: 18px;
-	padding: 6px;
+    width: 18vw;
+    margin-bottom: 18px;
+    padding: 6px;
 }
 
 #submit-button {
-	text-transform: uppercase;
-	font-size: 1vw;
-	height: 38px;
-	text-align: center;
-	border-style: none;
-	background-color: #47ce59;
+    text-transform: uppercase;
+    font-size: 1vw;
+    height: 38px;
+    text-align: center;
+    border-style: none;
+    background-color: #47ce59;
 }
+
 
 
 #checklists{
 	display: grid;
-	grid-template-columns: 30% 10%;padding-bottom: 10%;
+	grid-template-columns: 30% 10%;	
+	padding-bottom: 10%;
 }
 
 .techTitle {
-	width: 95%;
-	border-bottom: 1px solid black;
-	padding-bottom: 2%;
-	margin-top: 5%;
+    width: 95%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+    margin-top: 5%;
 }
 
-
 label {
-	margin-bottom: -12px;
-	display: block;
+    margin-bottom: -12px;
+    display: block;
 }
 
 .indicator-dots {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 .indicator-dots div {
-	margin-left: 30px;
-	width: 10px;
-	height: 10px;
-	border-radius: 60px;
-	background-color: rgb(92, 92, 92);
+    margin-left: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 60px;
+    background-color: rgb(92, 92, 92);
 }
 
 .back-button {
-	cursor: pointer;
-	padding: 0px 0px 8px;
-	border-style: none;
-	transition: all 500ms ease 0s;
-	-webkit-transition: all 500ms ease 0s;
-	-moz-transition: all 500ms ease 0s;
-	-o-transition: all 500ms ease 0s;
+    cursor: pointer;
+    padding: 0px 0px 8px;
+    border-style: none;
+    transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
 }
 
 .back-button p:hover {
-	color: rgb(14, 124, 187);
+    color: rgb(14, 124, 187);
 }
