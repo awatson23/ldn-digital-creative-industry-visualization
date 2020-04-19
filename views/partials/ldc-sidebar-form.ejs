@@ -19,7 +19,7 @@
 
           <section id="individual-form-div">
             <h2 class="hidden">Individual form</h2>
-            <form>
+            <form id="addform" method="post" action="http://localhost:3000/ldc-viz-network/new">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
 
@@ -33,7 +33,7 @@
                 <input type="month" id="grad" name="grad"><br>
 
                 <label for="job-title">Job title:</label><br>
-                <input type="text" id="job-title" name="job-title"><br>
+                <input type="text" id="job_title" name="job_title"><br>
 
                 <label for="company">Place of employment:</label><br>
                 <input type="text" id="company" name="company"><br>
@@ -107,28 +107,28 @@
 
                 </div>
 
-                <input id="submit-button" type="submit" value="Submit">
+                <input id="submit-button" type="submit" value="add">
 
               </form> 
           </section>
 
           <section id="organization-form-div">
               <h2 class="hidden">Organization form</h2>
-              <form>
+              <form id="addform" method="post" action="http://localhost:3000/ldc-viz-network/new">
                 <label for="cname">Company name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
 
                 <label for="cname">Company address:</label><br>
-                <input type="text" id="address" name="adress"><br>
+                <input type="text" id="address" name="address"><br>
 
                 <label for="csummary">Company summary:</label><br>
                 <input type="text" id="csummary" name="csummary"><br>
 
                 <label for="est-date">Establishment date:</label><br>
-                <input type="month" id="est-date" name="est-date"><br>
+                <input type="month" id="est_date" name="est_date"><br>
 
                 <label for="ind-sector">Industry Sector:</label><br>
-                <input type="text" id="ind-sector" name="ind-sector"><br>
+                <input type="text" id="ind_sector" name="ind_sector"><br>
 
               
                
@@ -200,7 +200,7 @@
                 <input class="checkbox" type="checkbox" name="java" value="node.js" checked>
 
                 </div>
-                <input id="submit-button" type="submit" value="Submit">
+                <input id="submit-button" type="submit" value="add">
               </form> 
               
           </section>
