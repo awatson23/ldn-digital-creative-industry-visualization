@@ -69,7 +69,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	background-color: #f2f3f0;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	border-right: 1px solid #ddd;
 }
 
 .home-content {
@@ -132,12 +132,14 @@ p {
 .projectDiv h3 {
 	font-family: 'IBM Plex Serif', serif; 
 	font-weight: 400;
-	text-align: center;
+	text-align: left;
 	font-size: 2vw;
-	padding: 5%;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .projectDiv p {
+	line-height: 1.25vw;
 	text-align: left;
 	font-size: 0.95vw;
 }
