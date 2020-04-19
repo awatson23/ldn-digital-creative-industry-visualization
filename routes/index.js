@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var imsdata = require('../models/ims_data.js');
+var Data = require('../models/Data.js');
+var Orgdata = require('../models/Orgdata.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,6 +15,31 @@ router.get('/ldc-viz-map', function(req, res, next) {
 
 router.get('/ldc-viz-network', function(req, res, next) {
   res.render('ldc-viz-network', { title: 'LDN Network' });
+});
+
+router.post('/ldc-viz-network/new', function(req, res, next) {
+  var newdata = new Data();
+    newdata.first_name = req.body.fname;
+    newdata.last_name = req.body.lname;
+    newdata.school_name = req.body.school;
+    newdata.graduation_year = req.body.grad;
+    newdata.jobtitle = req.body.job_title;
+    newdata.company_name = req.body.company;
+    newdata.save(function (err, data) {
+      if (err) return console.error(err);
+      // res.json(data);
+  });
+
+  var orgdata = new Orgdata();
+    orgdata.company_name = req.body.fname;
+    orgdata.company_address = req.body.address;
+    orgdata.company_summary = req.body.csummary;
+    orgdata.establishment_date = req.body.est_date;
+    orgdata.industry_sector = req.body.ind_sector;
+    orgdata.save(function (err, data) {
+      if (err) return console.error(err);
+      // res.json(data);
+  });
 });
 
 router.get('/wind-turbines', function(req, res, next) {
