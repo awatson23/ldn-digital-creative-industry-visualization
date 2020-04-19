@@ -44,7 +44,6 @@ a {
 /* END fontface */
 
 body {
-
 	font-family: 'IBM Plex Serif', serif;
 }
 
@@ -106,7 +105,6 @@ p {
 	grid-template-columns: 30vw 30vw;
 	grid-template-rows: 1fr 1fr;
 	justify-content: space-evenly;
-	
 }
 
 .projectDiv {
@@ -130,7 +128,7 @@ p {
 }
 
 .projectDiv h3 {
-	font-family: 'IBM Plex Serif', serif; 
+	font-family: 'IBM Plex Serif', serif;
 	font-weight: 400;
 	text-align: left;
 	font-size: 2vw;
@@ -246,7 +244,6 @@ p {
 .nav-button p {
 	font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 	color: #EEC643;
-	font-weight: bolder;
 	font-size: 1.2vw;
 }
 
@@ -400,4 +397,3 @@ label {
 	width: 60%;
 	height: auto;
 }
-
