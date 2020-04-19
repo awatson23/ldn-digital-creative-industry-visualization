@@ -1,4 +1,4 @@
- var width = window.innerWidth / 1;
+ var width = window.innerWidth / 0.8;
             var height = window.innerHeight / 1;
 
             //imports in a colour palette as an array
@@ -8,6 +8,11 @@
                 .append('svg')
                 .attr("width", width)
                 .attr("height", height);
+                
+                svg.append("rect")
+                    .attr("width", "100%")
+                    .attr("height", "100%")
+                    .attr("fill", "#fff");
 
             var simulation = d3.forceSimulation()
                 .force("link", d3.forceLink().id(function(d) {
