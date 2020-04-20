@@ -1,3 +1,5 @@
+ 
+ 
  var width = window.innerWidth / 0.8;
             var height = window.innerHeight / 1;
 
