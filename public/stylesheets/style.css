@@ -99,6 +99,28 @@ p {
 
 }
 
+.button-line {
+	z-index: 500;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-top: 3%;
+  }
+
+.button-line button {
+	background-color: #b3272d;
+	border: none;
+	border-radius: 5px;
+	padding: 5%;
+	margin: 3px;
+	font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+.button-line #fly-in {
+	width: 80.5%;
+}
+
 .projects-content {
 	position: absolute;
 	right: 0%;
