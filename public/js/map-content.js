@@ -1,48 +1,38 @@
-// mapid is the id of the div where the map will appear
-var map = L
-.map('map-content')
-.setView([43.00368, -81.254539], 75);   // center position + zoom
+   
+    var london = [42.981635, -81.245336];
+    var echidna = [42.981453, -81.249336];
+    var northern  = [42.981174, -81.242919];
+    var tbk  = [42.990400, -81.247600];
+    var arcane  = [42.980400, -81.250100];
+    var leaflet_map = new L.Map('map-content', {
+      zoom: 8,
+      center: london,
+      layers: new L.tileLayer(
+        'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png'
+      )});
+
+    
+      var echidna_marker = L.marker(echidna).addTo(leaflet_map).bindPopup('Digital Echidna');
+      var northern_marker = L.marker(northern).addTo(leaflet_map).bindPopup('Northern Commerce');
+      var tbk_marker = L.marker(tbk).addTo(leaflet_map).bindPopup('TBK');
+      var arcane_marker = L.marker(arcane).addTo(leaflet_map).bindPopup('Arcane');
+
+     function flyIn() {
+      leaflet_map.flyTo(london, 13);
+    };
+
+    function flyTo(loc) {
+      leaflet_map.flyTo(eval(loc), 18);
+    };
+
+    var explore_btn = document.querySelector('#fly-in');
+    explore_btn.addEventListener('click',flyIn,false);
+    var fly_btns = document.querySelectorAll('.fly-button');
+
+    for(var i=0; i<fly_btns.length; i++) {
+    fly_btns[i].addEventListener('click',function(e) {
+    flyTo(e.target.id);
+    },false);
 
 
-// Add a tile to the map = a background. Comes from OpenStreetmap
-L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
-  maxZoom: 14,
-  }).addTo(map);
-
-// Add a svg layer to the map
-L.marker([42.983500, -81.250900]).addTo(map)
-  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-  .openPopup();
-L.svg().addTo(map);
-
-// Create data for circles:
-
-
-
-function drawLayer() {
-// Select the svg area and add circles:
-d3.select("map-content")
-.select("svg")
-.selectAll("myCircles")
-.data(markers)
-.enter()
-.append("circle")
-  .attr("cx", function(d){ return map.latLngToLayerPoint([d.lat, d.lon]).x })
-  .attr("cy", function(d){ return map.latLngToLayerPoint([d.lat, d.lon]).y })
-  .attr("r", 14)
-  .style("fill", "red")
-  .attr("stroke-width", 3)
-  .attr("fill-opacity", .4)
-
-// Function that update circle position if something change
-function update() {
-d3.selectAll("circle")
-  .attr("cx", function(d){ return map.latLngToLayerPoint([d.lat, d.lon]).x })
-  .attr("cy", function(d){ return map.latLngToLayerPoint([d.lat, d.lon]).y })
-}
-
-// If the user change the map (zoom or drag), I update circle position:
-map.on("moveend", update)
-}	
+  }
