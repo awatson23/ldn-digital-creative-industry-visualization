@@ -278,6 +278,11 @@ p {
 	font-size: 1.2vw;
 }
 
+#forms {
+	display: none;
+}
+
+
 #individual-form-div {
 	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1vw;

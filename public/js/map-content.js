@@ -5,7 +5,7 @@
     var tbk  = [42.990400, -81.247600];
     var arcane  = [42.980400, -81.250100];
     var leaflet_map = new L.Map('map-content', {
-      zoom: 8,
+      zoom: 6,
       center: london,
       layers: new L.tileLayer(
         'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png'
