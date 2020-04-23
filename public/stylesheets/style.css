@@ -158,7 +158,8 @@ p {
 }
 
 .projectDiv h3 {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #006E90;
     font-weight: 400;
     text-align: left;
     font-size: 2vw;
@@ -287,9 +288,8 @@ p {
 }
 
 #forms {
-	display: none;
+    display: none;
 }
-
 
 #individual-form-div {
     font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
@@ -437,4 +437,11 @@ label {
     cursor: pointer;
     width: 60%;
     height: auto;
+}
+
+
+/* Force Graph */
+
+.force-graph {
+    background-color: #f2f3f0;
 }
