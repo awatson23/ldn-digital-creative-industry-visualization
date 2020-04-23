@@ -1,9 +1,11 @@
 
     var individualBtn = document.getElementById("individual-form-btn"),
         organizationBtn = document.getElementById("organization-form-btn");
-        openFormBtn = document.getElementById("open-form");
+        showFormBtn = document.getElementById("open-form");
+        returnNtwrkBtn = document.getElementById("back-network");
+        backBtn = document.getElementById("back-button-event");
 
-    openForm = document.getElementById("forms");
+    showForm = document.getElementById("forms");
     introText = document.getElementById("introText");
     showIndvForm = document.getElementById("individual-form-div");
     showOrgForm = document.getElementById("organization-form-div");
@@ -22,7 +24,13 @@
         showOrgForm.style.visibility = 'visible';
     }, false);
 
-    openFormBtn.addEventListener("click", function () {
-        openForm.style.display = 'block';
+    showFormBtn.addEventListener("click", function () {
+        showForm.style.display = 'block';
         introText.style.display = 'none';
     }, false);
+
+    backBtn.addEventListener("click", function () {
+        showForm.style.display = 'none';
+        introText.style.display = 'block';
+    }, false);
+
