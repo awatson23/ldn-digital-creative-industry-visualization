@@ -1,13 +1,52 @@
 <div id="makeFixedRow">
 <%include navBar.ejs%> 
 
-<section class="main-content">
+
+<section class="main-content" id="introText">
+    <h2 class="hidden">Main Container</h2>
+    <h2 class="hidden">Main Container</h2>
+    <section class="main-detail">
+        <!-- Title content -->
+        <div>
+            <h2 class="hidden">Main Header</h2>
+            <div class="back-button">
+                <a href="/ldc-viz-map">
+                    <p>Back</p>
+                </a>
+            </div>
+            <!-- headings -->
+            <div>
+                <h3>London Digital</h3>
+                <!-- background behind the project -->
+                <p class="introduction-paragraph">There is an extensive degree of technologies 
+                    and a diversity of job titles in the industry. 
+                   
+                 </p>
+                 
+                 <p class="introduction-paragraph">This network graph produces a 
+                    snapshot of the scope of technologies in use by Fanshawe alumni 
+                    and industry companies within London.</p>
+                    
+                <p class="introduction-paragraph">Upon exploration, you will uncover how 
+                technologies cluster together with different 
+                industry roles and titles.</p>
+
+
+                <div class="nav-button" id="open-form">
+                    <p>Add your details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="main-content" id="forms">
     <h2 class="hidden">Main Container</h2>
     <section class="main-detail">
         <!-- Title content -->
         <h2 class="hidden">London Creative App Form</h2>
         <div class="back-button">
-          <a href="/ldc-viz-map">
+          <a href="/ldc-viz-network">
               <p>Back</p>
           </a>
       </div>
@@ -217,24 +256,3 @@
 
 </div>
 
-<script>
-    var individualBtn = document.getElementById("individual-form-btn"),
-        organizationBtn = document.getElementById("organization-form-btn");
-
-    showIndvForm = document.getElementById("individual-form-div");
-    showOrgForm = document.getElementById("organization-form-div");
-
-    individualBtn.addEventListener("click", function () {
-        organizationBtn.style.backgroundColor = 'rgb(188, 228, 255)'
-        individualBtn.style.backgroundColor = 'rgb(14, 124, 187)'
-        showIndvForm.style.visibility = 'visible';
-        showOrgForm.style.visibility = 'hidden';
-    }, false);
-
-    organizationBtn.addEventListener("click", function () {
-        individualBtn.style.backgroundColor = 'rgb(188, 228, 255)'
-        organizationBtn.style.backgroundColor = 'rgb(14, 124, 187)'
-        showIndvForm.style.visibility = 'hidden';
-        showOrgForm.style.visibility = 'visible';
-    }, false);
-</script>
