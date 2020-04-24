@@ -106,11 +106,24 @@ p {
 }
 
 .button-line {
+<<<<<<< HEAD
+	z-index: 500;
+	position: absolute;
+	right: 4vw;
+	top: 0;
+	padding-top: 3%;
+  }
+=======
     z-index: 500;
     position: absolute;
     right: 0;
     top: 0;
     padding-top: 3%;
+}
+>>>>>>> 0560e93f6fae36a428f52adf31e08c2b98cef9d4
+
+.button-line select {
+  padding: 2%;
 }
 
 .button-line button {

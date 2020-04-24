@@ -9,16 +9,18 @@
   <link
     href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
     rel="stylesheet">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 
 <body>
     <%include partials/ldc-sidebar-network.ejs%>
 
      <section class="force-graph">
-        <%include partials/ldc-network-diagram.ejs%>
+      <h2 class="hidden">Force Graph</h2>
+        
       </section> 
 
-      
+      <script src="/js/network-content.js"></script>
       <script src="js/UI-functionality.js"></script>
 </body>
 
