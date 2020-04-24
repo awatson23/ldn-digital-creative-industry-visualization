@@ -4,8 +4,10 @@
             var height = window.innerHeight / 1;
 
             //imports in a colour palette as an array
-            var color = d3.scaleOrdinal(d3.schemeCategory20);
-
+            var color = d3.scaleOrdinal(d3.schemeCategory20b)
+            .domain([1, 2, 3, 4, 5, 6])
+            .range(["#011638", "#d33f49" , "#eec643", "#68B3A2", "#429b40", "#1880a0"]);
+                    //companies, job titles (alumni), back end, front end, framework tech  
             var svg = d3.select("body")
                 .append('svg')
                 .attr("width", width)
@@ -21,7 +23,7 @@
                     return d.id;
                 }))
                 .force('charge', d3.forceManyBody()
-                    .strength(-350)
+                    .strength(-650)
                     .distanceMax(10000)
                 )
                 .force("center", d3.forceCenter(width / 2, height / 2));
@@ -89,7 +91,7 @@
                     node
                     //setting dynamic values for the circles, that will update as necessary for each tick/iteration
                         .attr("r", function(d) {
-                        return d.rad;
+                        return d.rad + 3;
                     })
 
                     .attr("cx", function(d) {
@@ -101,12 +103,13 @@
 
                     label
                         .attr("x", function(d) {
-                            return d.x + 15;
+                            return d.x + 18;
                         })
                         .attr("y", function(d) {
-                            return d.y + 20;
+                            return d.y + 25;
                         })
-                        .style("font-size", "10px").style("fill", "#444");
+                        .style("font-size", "13px").style("fill", "#444")
+                        .style("font-family", 'akzidenz-grotesk_bqregular');
                 }
             }
 
@@ -130,7 +133,7 @@
             var graph = {
                 "nodes": [{
                     "id": "1",
-                    "group": 3,
+                    "group": 4,
                     "name": "JavaScript",
                     "rad": 12
                 }, {
@@ -140,12 +143,12 @@
                     "rad": 12
                 }, {
                     "id": "3",
-                    "group": 5,
+                    "group": 3,
                     "name": "Python",
                     "rad": 12
                 }, {
                     "id": "4",
-                    "group": 6,
+                    "group": 4,
                     "name": "CSS",
                     "rad": 15
                 }, {
@@ -160,17 +163,17 @@
                     "rad": 15
                 }, {
                     "id": "7",
-                    "group": 4,
+                    "group": 2,
                     "name": "Web Designer",
                     "rad": 9
                 }, {
                     "id": "8",
-                    "group": 1,
+                    "group": 2,
                     "name": "Project Lead",
                     "rad": 18
                 }, {
                     "id": "9",
-                    "group": 4,
+                    "group": 2,
                     "name": "UI-UX Designer",
                     "rad": 9
                 }, {
@@ -196,7 +199,12 @@
                 }, {
                     "id": "14",
                     "group": 2,
-                    "name": "Design",
+                    "name": "Design Lead",
+                    "rad": 15
+                }, {
+                    "id": "15",
+                    "group": 6,
+                    "name": "Drupal",
                     "rad": 15
                 }],
 
@@ -207,6 +215,21 @@
                     "value": 4
 
                 }, {
+                    "source": "4",
+                    "target": "7",
+                    "value": 4
+
+                },{
+                    "source": "10",
+                    "target": "15",
+                    "value": 4
+
+                },{
+                    "source": "15",
+                    "target": "6",
+                    "value": 4
+
+                },{
                     "source": "8",
                     "target": "6",
                     "value": 4
