@@ -31,7 +31,7 @@
  function buildDiagram(graph) {
 
      var link = svg.append("g")
-         .style("stroke", "#f2f3f0")
+         .style("stroke", "#C0C9CC")
          .selectAll("line")
          .data(graph.links)
          .enter().append("line");
