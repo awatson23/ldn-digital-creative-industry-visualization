@@ -15,7 +15,7 @@
  svg.append("rect")
      .attr("width", "100%")
      .attr("height", "100%")
-     .attr("fill", "#c0c9cc");
+     .attr("fill", "FFFDFD");
 
  var simulation = d3.forceSimulation()
      .force("link", d3.forceLink().id(function(d) {
