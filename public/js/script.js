@@ -1,6 +1,5 @@
- 
- 
  var width = window.innerWidth / 0.8;
+
             var height = window.innerHeight / 1;
 
             //imports in a colour palette as an array
