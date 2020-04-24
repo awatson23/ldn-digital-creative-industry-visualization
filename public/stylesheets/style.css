@@ -264,9 +264,11 @@ p {
 }
 
 .nav-button {
-    text-align: center;
-    background-color: #006E90;
-    padding: 5%;
+
+	text-align: center;
+	background-color: #006E90;
+	padding: 3%;
+
 }
 
 .nav-button:hover {
