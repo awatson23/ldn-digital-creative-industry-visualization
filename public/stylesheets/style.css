@@ -102,10 +102,14 @@ p {
 .button-line {
 	z-index: 500;
 	position: absolute;
-	right: 0;
+	right: 4vw;
 	top: 0;
 	padding-top: 3%;
   }
+
+.button-line select {
+  padding: 2%;
+}
 
 .button-line button {
 	background-color: #b3272d;
