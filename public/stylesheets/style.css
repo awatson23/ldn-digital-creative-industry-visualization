@@ -1,432 +1,462 @@
 /* cleaning up  */
 
-*, *::before, *::after {
-	box-sizing: inherit;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
+
 
 /*Fix for scaling of images IE*/
 
 img {
-	-ms-interpolation-mode: bicubic;
+    -ms-interpolation-mode: bicubic;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 
 /*hides from browser, shows in doc outliner */
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 /* FontFace  body*/
 
 @font-face {
-	font-family: 'akzidenz-grotesk_bqregular';
-	src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'), url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'akzidenz-grotesk_bqregular';
+    src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'), url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'akzidenz-grotesk_bqbold';
-	src: url('../fonts/akzidenzgrotesk-bold-webfont.woff2') format('woff2'), url('../fonts/akzidenzgrotesk-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('../fonts/akzidenzgrotesk-bold-webfont.woff2') format('woff2'), url('../fonts/akzidenzgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 /* END fontface */
 
 body {
-	font-family: 'IBM Plex Serif', serif;
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #F2F3F0;
 }
 
 p {
-	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	letter-spacing: 1px;
-	font-size: 0.75vw;
-	color: #011638;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.75vw;
+    color: #011638;
 }
 
 .landing-parent {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-content {
-	width: 25vw;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2f3f0;
-	border-right: 1px solid #ddd;
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f3f0;
+    border-right: 1px solid #ddd;
 }
 
 .home-content {
-	width: 30vw;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2f3f0;
-	box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32), -1px -3px 6px -2px rgba(0, 0, 0, 0.46);
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f3f0;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32), -1px -3px 6px -2px rgba(0, 0, 0, 0.46);
 }
 
 .turbine-content {
-	width: 25vw;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2f3f0;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f3f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 #map-content {
-	position: absolute;
-	right: 0%;
-	width: 67vw;
-	height: 100vh;
-
+    position: absolute;
+    right: 0%;
+    width: 67vw;
+    height: 100vh;
 }
 
 .button-line {
+<<<<<<< HEAD
 	z-index: 500;
 	position: absolute;
 	right: 4vw;
 	top: 0;
 	padding-top: 3%;
   }
+=======
+    z-index: 500;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 3%;
+}
+>>>>>>> 0560e93f6fae36a428f52adf31e08c2b98cef9d4
 
 .button-line select {
   padding: 2%;
 }
 
 .button-line button {
-	background-color: #b3272d;
-	border: none;
-	border-radius: 5px;
-	padding: 2%;
-	margin: 3px;
-	font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
+    background-color: #b3272d;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 3px;
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .button-line #fly-in {
-	width: 80.5%;
+    width: 80.5%;
 }
 
 .projects-content {
-	position: absolute;
-	right: 0%;
-	width: 60vw;
-	display: grid;
-	grid-template-columns: 30vw 30vw;
-	grid-template-rows: 1fr 1fr;
-	justify-content: space-evenly;
+    position: absolute;
+    right: 0%;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
 }
 
 .projectDiv {
-	width: 20vw;
-	height: 30vw;
-	display: flex;
-	flex-direction: column;
-	margin-top: 15%;
-	margin-bottom: 10%;
+    width: 20vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 .project-img {
-	width: 100%;
-	height: 20vw;
-	background-color: gray;
+    width: 100%;
+    height: 20vw;
+    background-color: gray;
 }
 
 .project-img img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .projectDiv h3 {
-	font-family: 'IBM Plex Serif', serif;
-	font-weight: 400;
-	text-align: left;
-	font-size: 2vw;
-	margin-top: 20px;
-	margin-bottom: 15px;
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #006E90;
+    font-weight: 400;
+    text-align: left;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .projectDiv p {
-	line-height: 1.25vw;
-	text-align: left;
-	font-size: 0.95vw;
+    line-height: 1.25vw;
+    text-align: left;
+    font-size: 0.95vw;
 }
+
 
 /* main content for text in housed */
 
 .main-detail {
-	width: 20vw;
-	height: 100vh;
-	padding: 0px 30px 0px 30px;
+    width: 20vw;
+    height: 100vh;
+    padding: 0px 30px 0px 30px;
 }
 
 #makeFixed {
-	position: fixed;
+    position: fixed;
 }
 
 #makeFixedRow {
-	position: fixed;
-	display: flex;
-	flex-direction: row;
-	width: 33vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 33vw;
 }
 
 .main-detail h3 {
-	font-family: 'IBM Plex Serif', serif;
-	font-size: 2.5vw;
-	font-weight: 400;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2.5vw;
+    font-weight: 400;
 }
+
 
 /* image dimensions */
 
 .logo img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .main-detail span {
-	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 0.85vw;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85vw;
 }
 
 .main-detail div {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .main-detail h3 {
-	font-family: 'IBM Plex Serif', serif;
-	font-weight: 500;
-	font-size: 2.5vw;
-	font-style: italic;
-	color: #011638;
-	line-height: 2.7vw;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    font-style: italic;
+    color: #011638;
+    line-height: 2.7vw;
 }
 
 .main-detail div span {
-	display: block;
-	margin-top: 5px;
-	margin-bottom: 15px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .main-detail p {
-	font-size: 0.95vw;
-	line-height: 1.75vw;
+    font-size: 0.95vw;
+    line-height: 1.75vw;
 }
 
 .introduction-paragraph {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 #form-type {
-	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0 auto;
-	margin-top: 64vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    margin-top: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .form-button {
-	font-size: 0.95vw;
-	text-align: center;
-	background-color: rgb(188, 228, 255);
-	padding: 5%;
-	width: 50%;
+    font-size: 0.95vw;
+    text-align: center;
+    background-color: rgb(188, 228, 255);
+    padding: 5%;
+    width: 50%;
 }
 
 .form-button:hover {
-	background-color: rgb(87, 170, 224);
-	cursor: pointer;
+    background-color: rgb(87, 170, 224);
+    cursor: pointer;
 }
 
 .nav-button {
+
 	text-align: center;
 	background-color: #006E90;
 	padding: 3%;
+
 }
 
 .nav-button:hover {
-	background-color: #C0C9CC;
-	cursor: pointer;
+    background-color: #C0C9CC;
+    cursor: pointer;
 }
 
 .nav-button p {
-	font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	color: #EEC643;
-	font-size: 1.2vw;
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #EEC643;
+    font-size: 1.2vw;
 }
 
 .nav-button:hover p {
-	font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	color: #006E90;
-	font-weight: bolder;
-	font-size: 1.2vw;
+    font-family: 'akzidenz-grotesk_bqbold', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: #006E90;
+    font-weight: bolder;
+    font-size: 1.2vw;
 }
 
 #forms {
-	display: none;
+    display: none;
 }
 
-
 #individual-form-div {
-	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1vw;
-	letter-spacing: 1px;
-	position: absolute;
-	width: 21vw;
-	height: 60vh;
-	visibility: visible;
-	margin-top: 33px;
-	overflow-y: scroll;
-	overflow-x: hidden;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 21vw;
+    height: 60vh;
+    visibility: visible;
+    margin-top: 33px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #individual-form-div input {
-	width: 18vw;
-	margin-bottom: 18px;
-	padding: 6px;
+    width: 18vw;
+    margin-bottom: 18px;
+    padding: 6px;
 }
 
 #individual-form-btn {
-	font-size: 0.95vw;
-	background-color: rgb(14, 124, 187);
+    font-size: 0.95vw;
+    background-color: rgb(14, 124, 187);
 }
 
 #organization-form-div {
-	font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1vw;
-	letter-spacing: 1px;
-	position: absolute;
-	width: 21vw;
-	height: 60vh;
-	visibility: hidden;
-	margin-top: 33px;
-	overflow-y: scroll;
-	overflow-x: hidden;
+    font-family: 'akzidenz-grotesk_bqregular', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 21vw;
+    height: 60vh;
+    visibility: hidden;
+    margin-top: 33px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #organization-form-div input {
-	width: 18vw;
-	margin-bottom: 18px;
-	padding: 6px;
+    width: 18vw;
+    margin-bottom: 18px;
+    padding: 6px;
 }
 
 #submit-button {
-	text-transform: uppercase;
-	font-size: 1vw;
-	height: 38px;
-	text-align: center;
-	border-style: none;
-	background-color: #47ce59;
+    text-transform: uppercase;
+    font-size: 1vw;
+    height: 38px;
+    text-align: center;
+    border-style: none;
+    background-color: #47ce59;
 }
 
 #checklists {
-	display: grid;
-	grid-template-columns: 30% 10%;
-	padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: 30% 10%;
+    padding-bottom: 10%;
 }
 
 .techTitle {
-	width: 95%;
-	border-bottom: 1px solid black;
-	padding-bottom: 2%;
-	margin-top: 5%;
+    width: 95%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+    margin-top: 5%;
 }
 
 label {
-	margin-bottom: -12px;
-	display: block;
+    margin-bottom: -12px;
+    display: block;
 }
 
 .indicator-dots {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 .indicator-dots div {
-	margin-left: 30px;
-	width: 10px;
-	height: 10px;
-	border-radius: 60px;
-	background-color: rgb(92, 92, 92);
+    margin-left: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 60px;
+    background-color: rgb(92, 92, 92);
 }
 
 .back-button {
-	cursor: pointer;
-	padding: 0px 0px 8px;
-	border-style: none;
-	transition: all 500ms ease 0s;
-	-webkit-transition: all 500ms ease 0s;
-	-moz-transition: all 500ms ease 0s;
-	-o-transition: all 500ms ease 0s;
+    cursor: pointer;
+    padding: 0px 0px 8px;
+    border-style: none;
+    transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
 }
 
 .back-button p:hover {
-	color: rgb(14, 124, 187);
+    color: rgb(14, 124, 187);
 }
 
 .navigation {
-	width: 10vw;
-	height: 100vh;
-	padding: 0px 20px 0px 20px;
-	background-color: white;
-	border-right: 1px solid #dddddd;
-	display: flex;
-	flex-direction: column;
+    width: 10vw;
+    height: 100vh;
+    padding: 0px 20px 0px 20px;
+    background-color: #F2F3F0;
+    border-right: 1px solid #dddddd;
+    box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.32), -1px -3px 6px -2px rgba(0, 0, 0, 0.46);
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* icon positioning */
 
 .fanshawe-logo a {
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .fanshawe-logo img {
-	width: 50%;
-	height: auto;
-	margin-top: 20px;
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
 }
 
 .icons-library {
-	margin-top: 120px;
+    margin-top: 120px;
 }
+
 
 /* icons positiioning  */
 
 .icons-library div {
-	display: flex;
-	height: auto;
-	justify-content: space-evenly;
-	margin-top: 40px;
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    margin-top: 40px;
 }
+
 
 /* change the icons sizes */
 
 .icons-library img {
-	cursor: pointer;
-	width: 60%;
-	height: auto;
+    cursor: pointer;
+    width: 60%;
+    height: auto;
+}
+
+
+/* Force Graph */
+
+.force-graph {
+    background-color: #f2f3f0;
 }
